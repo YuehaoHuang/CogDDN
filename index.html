@@ -3,27 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
-  <meta property="og:url" content="URL OF THE WEBSITE" />
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
 
   <title>CogDDN: A Cognitive Demand-Driven Navigation with Decision Optimization and Dual-Process Thinking</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
@@ -35,13 +14,18 @@
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <!-- <script src="https://kit.fontawesome.com/dcd6d05807.js" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.0/marked.min.js"></script>
 </head>
 
 <body>
@@ -49,30 +33,56 @@
 
   <section class="hero">
     <div class="hero-body">
-      <div class="container is-max-desktop" style="max-width: 73%;">
+      <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="title-container" style="display: flex; align-items: center; justify-content: center;">
-              <img src="static/images/question.jpg" alt="Example Image"
-                style="height: 120px; width: auto; margin-left: 15px;">
-              <h1 class="title is-1 publication-title" style="margin: 0;">CogDDN: A Cognitive Demand-Driven Navigation
-                with Decision Optimization and Dual-Process Thinking</h1>
+            <div class="title-container">
+              <img src="static/images/question.jpg" alt="Cog Icon" style="width: 100px; margin-right: 30px;">
+              <h1 class="title is-1 publication-title">
+                <span class="title-original">
+                  CogDDN: A Cognitive Demand-Driven Navigation with Decision Optimization and Dual-Process Thinking
+                </span>
+                <span class="title-hover" style="color: #5fb2ff;">
+                  CogDDN
+                </span>
+              </h1>
             </div>
-            <div class="is-size-5 publication-authors">
+            <br>
+            <div class="is-size-4 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <!-- <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Anonymous Author(s)</a><sup>*</sup>,</span> -->
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Anonymous Author(s)</a>,</span>
-              <!-- <span class="author-block">
-                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                <a href="https://april.zju.edu.cn/team/yuehao-huang/" target="_blank">Yuehao
+                  Huang</a><sup>1,*</sup>,</span>
               <span class="author-block">
-                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a> -->
-              </span>
+                <a href="https://scholar.google.com/citations?hl=zh-CN&user=Kkg3IPMAAAAJ" target="_blank">Liang
+                  Liu</a><sup>2,*</sup>,</span>
+              <span class="author-block">
+                <a href="https://april.zju.edu.cn/team/shuangming-lei/" target="_blank">Shuangming
+                  Lei</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://april.zju.edu.cn/team/yukai-ma/" target="_blank">Yukai Ma</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://github.com/Suhao07" target="_blank">Hao Su</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://april.zju.edu.cn/team/jianbiao-mei/" target="_blank">Jianbiao
+                  Mei</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://april.zju.edu.cn/team/pengxiang-zhao/" target="_blank">Pengxiang
+                  Zhao</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://april.zju.edu.cn/team/yaqing-gu/" target="_blank">Yaqing Gu</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://april.zju.edu.cn/team/dr-yong-liu/" target="_blank">Yong Liu</a><sup>1,<i
+                    class="fa-regular fa-envelope fa-shake"></i></sup>,</span>
+              <span class="author-block">
+                <a href="https://april.zju.edu.cn/team/jiajun-lv/" target="_blank">Jiajun Lv</a><sup>1,<i
+                    class="fa-regular fa-envelope fa-shake"></i></sup>,</span>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <!-- <span class="author-block">Institution Name<br>Conferance name and year</span> -->
-              <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+              <span class="author-block"><small><br><sup>1</sup>Zhejiang University</small></span>&ensp;
+              <span class="author-block"><small><br><sup>2</sup>vivo AI Lab</small></span>&ensp;
+              <i class="fa-regular fa-envelope fa-shake"></i></sup>Corresponding author</span>
             </div>
 
             <div class="column has-text-centered">
@@ -102,7 +112,7 @@
 
                 <!-- Github link -->
                 <span class="link-block">
-                  <a href="https://github.com/acmmmcogdnn/CogDDN" target="_blank"
+                  <a href="https://github.com/yuehaohuang/CogDDN" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -285,7 +295,7 @@
           <h2 class="title has-text-centered" style="margin-bottom: 10px;">
             Analytic Process
           </h2>
-          <img src="static/images/reflection.png" alt="MY ALT TEXT" style="max-width: 50%; height: auto;" />
+          <img src="static/images/analytic_process.png" alt="MY ALT TEXT" style="max-width: 50%; height: auto;" />
           <br>
           <h2 class="subtitle has-text-left" style="max-width: 70%; margin: 0 auto;">
             When the Heuristic Process encounters an obstruction, the Analytic Process intervenes by analyzing the
@@ -391,9 +401,6 @@
 
 
 
-
-
-
   <!-- Paper poster -->
   <!-- <section class="hero is-small is-light">
     <div class="hero-body">
@@ -410,12 +417,47 @@
 
 
   <!--BibTex citation -->
-  <!-- <section class="section" id="BibTeX">
+  <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <div style="position: relative;">
+        <button id="copyButton" style="position: absolute; top: 0; right: 0;">Copy</button>
+        <pre><code id="bibtexCode">
+      <!-- @misc{ma2025leapvadleapautonomousdriving,
+          title={LeapVAD: A Leap in Autonomous Driving via Cognitive Perception and Dual-Process Thinking}, 
+          author={Yukai Ma and Tiantian Wei and Naiting Zhong and Jianbiao Mei and Tao Hu and Licheng Wen and Xuemeng Yang and Botian Shi and Yong Liu},
+          year={2025},
+          eprint={2501.08168},
+          archivePrefix={arXiv},
+          primaryClass={cs.AI},
+          url={https://arxiv.org/abs/2501.08168}, 
+      } -->
+      </code></pre>
+      </div>
     </div>
-  </section> -->
+  </section>
+
+  <script>
+    var copyButton = document.getElementById("copyButton");
+
+    copyButton.addEventListener("click", function () {
+      var codeElement = document.getElementById("bibtexCode");
+      var textToCopy = codeElement.textContent;
+
+      var textarea = document.createElement("textarea");
+      textarea.value = textToCopy;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textarea);
+
+      copyButton.textContent = "✓ Copied!";
+
+      setTimeout(function () {
+        copyButton.textContent = "Copy";
+      }, 2000); // Reset the button text after 2 seconds (adjust as needed)
+    });
+  </script>
   <!--End BibTex citation -->
 
 
@@ -423,12 +465,11 @@
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-8">
-          <div class="content has-text-centered">
-            <p>
-              ❤️ This page was built using the
-              <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">
-                Academic Project Page Template
-              </a> ❤️
+          <div class="content">
+            <p style="text-align: center;"><i class="fa-solid fa-heart fa-beat-fade" style="color: #5fb2ff;"></i>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> <i class="fa-solid fa-heart fa-beat-fade"
+                style="color: #5fb2ff;"></i>
             </p>
           </div>
         </div>

@@ -127,3 +127,46 @@ body {
 .eql-cntrb {
   font-size: smaller;
 }
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title.is-1.publication-title {
+  margin: 0;
+  position: relative;
+  display: inline-block;
+}
+
+.title-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.title-original,
+.title-hover {
+  transition: opacity 1.2s ease;
+  text-align: center;
+}
+
+.title-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title.is-1.publication-title:hover .title-original {
+  opacity: 0;
+}
+
+.title.is-1.publication-title:hover .title-hover {
+  opacity: 1;
+}
