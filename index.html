@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>CogDDN: A Cognitive Demand-Driven Navigation with Decision Optimization and Dual-Process Thinking</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop" style="max-width: 73%;">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="title-container" style="display: flex; align-items: center; justify-content: center;">
+              <img src="static/images/question.jpg" alt="Example Image"
+                style="height: 120px; width: auto; margin-left: 15px;">
+              <h1 class="title is-1 publication-title" style="margin: 0;">CogDDN: A Cognitive Demand-Driven Navigation
+                with Decision Optimization and Dual-Process Thinking</h1>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <!-- <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Anonymous Author(s)</a><sup>*</sup>,</span> -->
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Anonymous Author(s)</a>,</span>
+              <!-- <span class="author-block">
+                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a> -->
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <!-- <span class="author-block">Institution Name<br>Conferance name and year</span> -->
+              <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+
+                <!-- Arxiv PDF link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span> -->
+
+                <!-- Supplementary PDF link -->
+                <!-- <span class="link-block">
+                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Supplementary</span>
+                  </a>
+                </span> -->
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/acmmmcogdnn/CogDDN" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Teaser video-->
+  <!-- <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video poster="" id="tree" autoplay controls muted loop height="100%" 
+                style="display: block; margin: 0 auto; max-width: 100%;">
+          <source src="static/videos/case_0.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section> -->
+  <!-- End teaser video -->
+
+  <!-- Video carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <!-- <h2 class="title has-text-centered" style="margin-bottom: 20px;">视频演示</h2> -->
+
+        <div id="videos-carousel" class="carousel results-carousel">
+          <!-- case_0 -->
+          <div class="item">
+            <video poster="" controls muted loop style="width: 100%; display: block; margin: 0 auto;">
+              <source src="static/videos/case_0.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <!-- case_1 -->
+          <div class="item">
+            <video poster="" controls muted loop style="width: 100%; display: block; margin: 0 auto;">
+              <source src="static/videos/case_1.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <!-- case_2 -->
+          <div class="item">
+            <video poster="" controls muted loop style="width: 100%; display: block; margin: 0 auto;">
+              <source src="static/videos/case_2.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <!-- case_3 -->
+          <div class="item">
+            <video poster="" controls muted loop style="width: 100%; display: block; margin: 0 auto;">
+              <source src="static/videos/case_3.mp4" type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop" style="max-width: 60%;">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Demand-driven navigation (DDN) refers to identifying and locating objects based on implicit user needs,
+              although in dynamic and uncertain scenarios where the locations of objects are unknown. Traditional
+              data-driven methods rely on pre-collected data for model training and decision-making, which limits their
+              ability to generalize in unseen scenarios. In this paper, we propose CogDDN, a framework that emulates the
+              human attentional mechanism by selectively focusing on key objects crucial for fulfilling user demands.
+              CogDDN incorporates a dual-process decision-making module, comprising a Heuristic Process (System-I) for
+              fast and efficient decision-making, with an Analytic Process (System-II) that analyzes past errors,
+              accumulates them in a knowledge base and continuously improves its performance. Chain of Thought (CoT)
+              reasoning is employed to strengthen the decision-making process. Extensive closed-loop evaluations on the
+              AI2Thor simulator with the ProcThor dataset demonstrate that CogDDN outperforms single-view camera-only
+              methods by 15%, showing significant improvements in navigation accuracy and adaptability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div class="item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+          <h2 class="title has-text-centered" style="margin-bottom: 10px;">
+            CogDDN Architecture
+          </h2>
+          <img src="static/images/pipeline.png" alt="MY ALT TEXT" style="max-width: 70%; height: auto;" />
+          <br>
+          <h2 class="subtitle has-text-left" style="max-width: 70%; margin: 0 auto;">
+            The monocular 3D object detection module identifies objects based on the robot's perception of the
+            environment. The detected objects and the human demand are then used as input prompts for the demand
+            matching module, which identifies the matched objects. This information is fed into the dual-process
+            decision module, which drives scene description, reasoning, and decision-making. If no object matches the
+            instruction, the explore module in the Heuristic Process is triggered to output a series of decisions for
+            exploring unknown areas. Conversely, if a matching object is found, the exploit module, refined through the
+            knowledge base, is activated to approach the target object. The Analytic Process uses a VLM to analyze the
+            situation whenever obstacles are encountered, and the corrected information is stored as experience in the
+            knowledge base.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div class="item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+          <h2 class="title has-text-centered" style="margin-bottom: 10px;">
+            knowledge Base
+          </h2>
+          <img src="static/images/knowledge.png" alt="MY ALT TEXT" style="max-width: 50%; height: auto;" />
+          <br>
+          <h2 class="subtitle has-text-left" style="max-width: 70%; margin: 0 auto;">
+            A random instruction is selected, and the target object is identified. The A* algorithm generates a
+            trajectory consisting of actions based on the existing grid map and the target object's position. During the
+            execution of these actions, the position of the target object is determined using the current viewpoint
+            image. When a matching object is detected, the VLM generates a scene description and reasoning, which is
+            then added to the knowledge base experience format.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div class="item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+          <h2 class="title has-text-centered" style="margin-bottom: 10px;">
+            Heuristic Process
+          </h2>
+          <img src="static/images/heuristic_process.png" alt="MY ALT TEXT" style="max-width: 50%; height: auto;" />
+          <br>
+          <h2 class="subtitle has-text-left" style="max-width: 70%; margin: 0 auto;">
+            When no target object is present, the Explore module directly utilizes the VLM and the current viewpoint
+            image, historical information, and obstacle mark to generate a series of actions for exploring unknown
+            areas. In contrast, the Exploit module leverages a VLM fine-tuned with knowledge base information to output
+            a single action that progressively moves towards the target object.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div class="item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+          <h2 class="title has-text-centered" style="margin-bottom: 10px;">
+            Analytic Process
+          </h2>
+          <img src="static/images/reflection.png" alt="MY ALT TEXT" style="max-width: 50%; height: auto;" />
+          <br>
+          <h2 class="subtitle has-text-left" style="max-width: 70%; margin: 0 auto;">
+            When the Heuristic Process encounters an obstruction, the Analytic Process intervenes by analyzing the
+            previous frame to identify errors and generate corrected samples. These corrected samples are subsequently
+            integrated into the knowledge base, supporting continuous learning.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title has-text-centered" style="margin-bottom: 20px;">
+          Case Studies
+        </h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <img src="static/images/explore_case.png" alt="MY ALT TEXT"
+              style="width: 50%; display: block; margin: 0 auto;" />
+            <h2 class="subtitle has-text-centered">
+              A case of Explore module.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/exploit_case.png" alt="MY ALT TEXT"
+              style="width: 50%; display: block; margin: 0 auto;" />
+            <h2 class="subtitle has-text-centered">
+              A straight case in an Exploit module.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/exploit_case2.png" alt="MY ALT TEXT"
+              style="width: 50%; display: block; margin: 0 auto;" />
+            <h2 class="subtitle has-text-centered">
+              A bypass case in an Exploit module.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/reflect_case.png" alt="MY ALT TEXT"
+              style="width: 70%; display: block; margin: 0 auto;" />
+            <h2 class="subtitle has-text-centered">
+              Case study for reflection mechanism.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End image carousel -->
+
+
+
+
+  <!-- Youtube video -->
+  <!-- <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Video Presentation</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+
+            <div class="publication-video">
+              <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- End youtube video -->
+
+
+  <!-- Video carousel -->
+  <!-- <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Another Carousel</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-video1">
+            <video poster="" id="video1" autoplay controls muted loop height="100%">
+              <source src="static/videos/carousel1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video2">
+            <video poster="" id="video2" autoplay controls muted loop height="100%">
+              <source src="static/videos/carousel2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video3" autoplay controls muted loop height="100%">\
+              <source src="static/videos/carousel3.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- End video carousel -->
+
+
+
+
+
+
+  <!-- Paper poster -->
+  <!-- <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title">Poster</h2>
+
+        <iframe src="static/pdfs/sample.pdf" width="100%" height="550">
+        </iframe>
+
+      </div>
+    </div>
+  </section> -->
+  <!--End paper poster -->
+
+
+  <!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+  </section> -->
+  <!--End BibTex citation -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content has-text-centered">
+            <p>
+              ❤️ This page was built using the
+              <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">
+                Academic Project Page Template
+              </a> ❤️
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
